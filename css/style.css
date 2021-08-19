@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/* ----------------------- 1.1 - Main---------------------------------- */
+.mainBox {
+  height: 39%;
+  width: 85%;
+  margin: auto; }
+
+.textoFacha {
+  justify-content: center -2%;
+  background-color: seashell; }
+
+.tamaño {
+  display: contents;
+  width: 100%;
+  height: 25%; }
+
+.footer {
+  border-top: 1px brown solid;
+  margin-left: 7.5%; }
+
+.textoInforma {
+  margin: 5% 7.5%;
+  font-family: 'Pontano Sans', sans-serif; }
+
+#productos {
+  font-family: 'Poppins', 'sans-serif';
+  margin-top: 6%;
+  width: 100%;
+  height: 25%;
+  background-color: #BC8A5F;
+  display: flex;
+  box-shadow: 4px 4px 4px 4px darkgray; }
+  #productos .productosStyle {
+    text-shadow: black 2px 2px 2px;
+    color: aliceblue;
+    font-size: 4rem; }
+
+.title {
+  font-family: 'Julius Sans One', sans-serif;
+  color: aliceblue !important;
+  height: 100px;
+  width: 100%;
+  text-shadow: 5px 5px 5px darkgray; }
+
+.navbar-brand {
+  font-family: 'Julius Sans One', sans-serif !important;
+  font-size: 15rem;
+  color: aliceblue; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+/* ----------------------- 1. Body------------------------------------- */
+body {
+  overflow-y: scroll;
+  letter-spacing: 0.03;
+  line-height: 1.6;
+  font-family: 'Julius Sans One', sans-serif; }
+
+.bodyContainer {
+  background-image: linear-gradient(to bottom, #FFF5EB, #F1CDA7);
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1.5rem;
+  width: 100%;
+  height: 100%; }
+
+.header {
+  margin-top: 3%;
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+  color: #3b3a3a;
+  width: 90%;
+  height: 10%;
+  display: flex;
+  flex-direction: column; }
+  .header h1 {
+    font-size: 1rem;
+    text-shadow: 2px 2px 2px darkgray;
+    text-align: center; }
+  .header h2 {
+    font-size: 1.7rem;
+    margin-top: 2%;
+    text-align: center;
+    color: #3c3c41;
+    text-shadow: 2px 2px 2px darkgray; }
+
+h2 {
+  font-size: 1.7rem;
+  margin-top: 2%;
+  text-align: center;
+  color: #3c3c41;
+  text-shadow: 2px 2px 2px darkgray; }
+
+.row {
+  font-family: "font-family: 'Julius Sans One', sans-serif";
+  display: flex;
+  flex-wrap: wrap;
+  height: 430px;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: center;
+  margin: auto; }
+  .row .bordeado {
+    width: 330px;
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s; }
+    .row .bordeado img {
+      width: 200px;
+      height: 170px; }
+    .row .bordeado p {
+      padding: 0.02;
+      font-size: 1.1rem;
+      font-weight: 300; }
+  .row .bordeado:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 15px rgba(0, 0, 0, 0.2); }
+
+/* ------------------------/1.2- Texto y footer--------------------- */

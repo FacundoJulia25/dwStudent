@@ -1,0 +1,14 @@
+#productos {
+    font-family: 'Poppins', 'sans-serif' ;
+    margin-top: 6%;
+    width: 100%;
+    height: 25%;
+    background-color: $palette6;
+    display: flex;
+    box-shadow: 4px 4px 4px 4px darkgray;
+      .productosStyle{
+         text-shadow: black 2px 2px 2px;
+         color: aliceblue;
+         font-size: 4rem;
+     }
+}
