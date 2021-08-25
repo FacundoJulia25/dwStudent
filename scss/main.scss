@@ -9,23 +9,21 @@
 }
 
 /* ----------------------- 1. Body------------------------------------- */
-body{
-    overflow-y:scroll;
+body {
     letter-spacing: 0.03;
     line-height: 1.6;
-    font-family: 'Julius Sans One', sans-serif;
-
+    font-family: "Julius Sans One", sans-serif;
+    // background-image: linear-gradient(to bottom, #FFF5EB, #F1CDA7);
 
 }
-.bodyContainer{
-    background-image: linear-gradient(to bottom, $palette10, $palette9);
-    font-family: 'Julius Sans One', sans-serif;
+.bodyContainer {
+    background-image: linear-gradient(to bottom, #FFF5EB, #F1CDA7);
+    font-family: "Julius Sans One", sans-serif;
     font-size: 1.5rem;
-    width:100%;
-    height:100%;
-
+    width: 100%;
+    height: auto;
 }
-.header{
+.header {
     margin-top: 3%;
     margin-left: 7.5%;
     margin-right: 7.5%;
@@ -34,67 +32,62 @@ body{
     height: 10%;
     display: flex;
     flex-direction: column;
-;
-    h1{
+    h1 {
         font-size: 1rem;
         text-shadow: 2px 2px 2px darkgray;
         text-align: center;
-        
     }
-    h2{
+    h2 {
         font-size: 1.7rem;
         margin-top: 2%;
         text-align: center;
         color: rgb(60, 60, 65);
         text-shadow: 2px 2px 2px darkgray;
-
     }
-
 }
-h2{
+h2 {
     font-size: 1.7rem;
     margin-top: 2%;
     text-align: center;
     color: rgb(60, 60, 65);
     text-shadow: 2px 2px 2px darkgray;
 }
-.row{
+.row {
     font-family: "font-family: 'Julius Sans One', sans-serif";
     display: flex;
     flex-wrap: wrap;
-    height: 430px;
+    height: auto;
     width: 100%;
     max-width: 1200px;
     justify-content: center;
     margin: auto;
-    .bordeado{
-      width: 330px;
-      height: 300px;
-      border-radius: 8px;
-      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-      overflow: hidden;
-      margin: 20px;
-      text-align: center;
-      transition: all 0.25s;
-        img{
+    .bordeado {
+        width: 330px;
+        height: 300px;
+        border-radius: 8px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+        margin: 20px;
+        text-align: center;
+        transition: all 0.25s;
+        img {
             width: 200px;
             height: 170px;
         }
-        p{
+        p {
             padding: 0.02;
             font-size: 1.1rem;
             font-weight: 300;
         }
     }
-    .bordeado:hover{
-       transform: translateY(-15px);
-       box-shadow: 0 12px 15px rgba(0, 0, 0, 0.2);
+    .bordeado:hover {
+        transform: translateY(-15px);
+        box-shadow: 0 12px 15px rgba(0, 0, 0, 0.2);
     }
 }
-
-
-
-
+.rowContainer{
+    display:flex;
+    width: 100%;
+    height: auto;
+    margin-top: 5000px;
+}
 /* ------------------------/1.2- Texto y footer--------------------- */
-
-

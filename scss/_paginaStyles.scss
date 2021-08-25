@@ -1,14 +1,57 @@
+//--------------------Productos---------------------
 #productos {
-    font-family: 'Poppins', 'sans-serif' ;
-    margin-top: 6%;
-    width: 100%;
-    height: 25%;
-    background-color: $palette6;
-    display: flex;
-    box-shadow: 4px 4px 4px 4px darkgray;
-      .productosStyle{
-         text-shadow: black 2px 2px 2px;
-         color: aliceblue;
-         font-size: 4rem;
-     }
+  font-family: "Poppins", "sans-serif";
+  margin-top: 5%;
+  width: 100%;
+  height: 20%;
+  background-color: $palette6;
+  display: flex;
+  box-shadow: 4px 4px 4px 4px darkgray;
+  position: absolute;
+  .productosStyle {
+    text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+    color: aliceblue;
+    font-size: 4rem;
+    padding-left: 2%;
+    position: relative;
+  }
 }
+.text-pop-up-bottom {
+  -webkit-animation: text-pop-up-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: text-pop-up-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@-webkit-keyframes text-pop-up-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    text-shadow: none;
+  }
+  100% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    text-shadow: 0 1px 0 rgb(0, 0, 0), 0 2px 0 rgb(0, 0, 0), 0 3px 0 rgb(0, 0, 0), 0 4px 0 rgb(0, 0, 0), 0 5px 0 rgb(0, 0, 0), 0 6px 0 #cccccc,
+      0 7px 0 rgb(0, 0, 0), 0 8px 0rgb(0, 0, 0)rgb(0, 0, 0), 0 9px 0 rgb(0, 0, 0), 0 50px 30px rgba(0, 0, 0, 0.3);
+  }
+}
+@keyframes text-pop-up-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    text-shadow: none;
+  }
+  100% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    text-shadow: 0 1px 0 rgb(0, 0, 0), 0 2px 0 rgb(0, 0, 0), 0 3px 0 rgb(0, 0, 0), 0 4px 0 rgb(0, 0, 0), 0 5px 0 rgb(0, 0, 0), 0 6px 0 #cccccc,
+    0 7px 0 rgb(0, 0, 0), 0 8px 0rgb(0, 0, 0)rgb(0, 0, 0), 0 9px 0 rgb(0, 0, 0), 0 50px 30px rgba(0, 0, 0, 0.3);
+}
+}
+
