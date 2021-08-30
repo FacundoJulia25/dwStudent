@@ -1,8 +1,65 @@
 .footer {
+    box-sizing: border-box;
     border-top: 1px brown solid;
     margin-left: 7.5%;
 }
 .textoInforma {
     margin: 5% 7.5%;
-    font-family: 'Pontano Sans', sans-serif;
+    font-family: "Pontano Sans", sans-serif;
+}
+:root {
+    --facebook: #3b5999;
+    --instagram: #e4405f;
+    --twitter: #55acee;
+    --pinterest: #bd081c;
+    --linkedin: #0077b5;
+}
+.redesContainer {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    ul {
+        li {
+            display: inline-block;
+            margin: 0 5px;
+            height: 50px;
+            width: 50px;
+            text-align: center;
+            a {
+                display: block;
+                padding: 0 10px;
+                background-color: #333;
+                color: #fff;
+                line-height: 50px;
+                font-size: 15px;
+                box-shadow: 0 5px 0px rgba(0, 0, 0, 0.2);
+                transition: 0.2s;
+            }
+            a:hover{
+                transform: translateY(-3px) scale(1.05);
+                filter: none;
+            }
+            .instagram:hover {
+                background-color: #e4405f;
+            }
+            .twitter:hover {
+                background-color: #55acee;
+            }
+            .facebook:hover {
+                background-color: #3b5998;
+            }
+            .pinterest:hover{
+                background-color: #cb2027
+            }
+            .linkedin:hover{
+                background-color: #0077b5;
+            }
+        }
+    }
+    ul:hover {
+        a {
+            filter: blur(2px);
+        }
+    }
 }

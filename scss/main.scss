@@ -13,11 +13,9 @@ body {
     letter-spacing: 0.03;
     line-height: 1.6;
     font-family: "Julius Sans One", sans-serif;
-    // background-image: linear-gradient(to bottom, #FFF5EB, #F1CDA7);
-
+    background-image: linear-gradient(to bottom, #fff, $palette9);
 }
 .bodyContainer {
-    background-image: linear-gradient(to bottom, #FFF5EB, #F1CDA7);
     font-family: "Julius Sans One", sans-serif;
     font-size: 1.5rem;
     width: 100%;
@@ -53,7 +51,7 @@ h2 {
     text-shadow: 2px 2px 2px darkgray;
 }
 .row {
-    font-family: "font-family: 'Julius Sans One', sans-serif";
+    font-family: "Poppins", "sans-serif";
     display: flex;
     flex-wrap: wrap;
     height: auto;
@@ -84,8 +82,8 @@ h2 {
         box-shadow: 0 12px 15px rgba(0, 0, 0, 0.2);
     }
 }
-.rowContainer{
-    display:flex;
+.rowContainer {
+    display: flex;
     width: 100%;
     height: auto;
     margin-top: 5000px;

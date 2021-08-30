@@ -2,7 +2,7 @@
 /* ----------------------- 1.1 - Main---------------------------------- */
 .mainBox {
   height: 39%;
-  width: 85%;
+  width: 90%;
   margin: auto; }
 
 .textoFacha {
@@ -15,28 +15,75 @@
   height: 25%; }
 
 .footer {
+  box-sizing: border-box;
   border-top: 1px brown solid;
   margin-left: 7.5%; }
 
 .textoInforma {
   margin: 5% 7.5%;
-  font-family: 'Pontano Sans', sans-serif; }
+  font-family: "Pontano Sans", sans-serif; }
+
+:root {
+  --facebook: #3b5999;
+  --instagram: #e4405f;
+  --twitter: #55acee;
+  --pinterest: #bd081c;
+  --linkedin: #0077b5; }
+
+.redesContainer {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center; }
+  .redesContainer ul li {
+    display: inline-block;
+    margin: 0 5px;
+    height: 50px;
+    width: 50px;
+    text-align: center; }
+    .redesContainer ul li a {
+      display: block;
+      padding: 0 10px;
+      background-color: #333;
+      color: #fff;
+      line-height: 50px;
+      font-size: 15px;
+      box-shadow: 0 5px 0px rgba(0, 0, 0, 0.2);
+      transition: 0.2s; }
+    .redesContainer ul li a:hover {
+      transform: translateY(-3px) scale(1.05);
+      filter: none; }
+    .redesContainer ul li .instagram:hover {
+      background-color: #e4405f; }
+    .redesContainer ul li .twitter:hover {
+      background-color: #55acee; }
+    .redesContainer ul li .facebook:hover {
+      background-color: #3b5998; }
+    .redesContainer ul li .pinterest:hover {
+      background-color: #cb2027; }
+    .redesContainer ul li .linkedin:hover {
+      background-color: #0077b5; }
+  .redesContainer ul:hover a {
+    filter: blur(2px); }
+
+.bodyContainerProd {
+  background-color: #FFF5EB; }
 
 #productos {
   font-family: "Poppins", "sans-serif";
-  margin-top: 5%;
+  margin-top: 3%;
   width: 100%;
   height: 20%;
   background-color: #BC8A5F;
   display: flex;
-  box-shadow: 4px 4px 4px 4px darkgray;
-  position: absolute; }
+  box-shadow: 4px 4px 4px 4px darkgray; }
   #productos .productosStyle {
+    position: relative;
+    bottom: 40px;
     text-shadow: black 2px 2px 2px;
     color: aliceblue;
     font-size: 4rem;
-    padding-left: 2%;
-    position: relative; }
+    padding-left: 2%; }
 
 .text-pop-up-bottom {
   -webkit-animation: text-pop-up-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -50,8 +97,8 @@
     transform-origin: 50% 50%;
     text-shadow: none; }
   100% {
-    -webkit-transform: translateY(50px);
-    transform: translateY(50px);
+    -webkit-transform: translateY(25px);
+    transform: translateY(25px);
     -webkit-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
     text-shadow: 0 1px 0 black, 0 2px 0 black, 0 3px 0 black, 0 4px 0 black, 0 5px 0 black, 0 6px 0 #cccccc, 0 7px 0 black, 0 8px 0rgb 0, 0, 0 black, 0 9px 0 black, 0 50px 30px rgba(0, 0, 0, 0.3); } }
@@ -69,6 +116,10 @@
     -webkit-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
     text-shadow: 0 1px 0 black, 0 2px 0 black, 0 3px 0 black, 0 4px 0 black, 0 5px 0 black, 0 6px 0 #cccccc, 0 7px 0 black, 0 8px 0rgb 0, 0, 0 black, 0 9px 0 black, 0 50px 30px rgba(0, 0, 0, 0.3); } }
+
+.position {
+  position: relative;
+  top: 50px; }
 
 .title {
   font-family: 'Julius Sans One', sans-serif;
@@ -90,10 +141,10 @@
 body {
   letter-spacing: 0.03;
   line-height: 1.6;
-  font-family: "Julius Sans One", sans-serif; }
+  font-family: "Julius Sans One", sans-serif;
+  background-image: linear-gradient(to bottom, #fff, #F1CDA7); }
 
 .bodyContainer {
-  background-image: linear-gradient(to bottom, #FFF5EB, #F1CDA7);
   font-family: "Julius Sans One", sans-serif;
   font-size: 1.5rem;
   width: 100%;
@@ -127,7 +178,7 @@ h2 {
   text-shadow: 2px 2px 2px darkgray; }
 
 .row {
-  font-family: "font-family: 'Julius Sans One', sans-serif";
+  font-family: "Poppins", "sans-serif";
   display: flex;
   flex-wrap: wrap;
   height: auto;
