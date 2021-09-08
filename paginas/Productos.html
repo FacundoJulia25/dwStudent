@@ -2,20 +2,26 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet">
+    <link rel=“stylesheet” href=“https://use.fontawesome.com/releases/v5.8.1/css/all.css”
+        integrity=“sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0Ml5d60M1M7uH2+nqUivzIebhndOJK28anvf” crossorigin=“anonymous”>
+    <script src="https://kit.fontawesome.com/7f139d5a05.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+    </style>
+
     <title>Productos</title>
 </head>
 
-<body style="font-family: 'Julius Sans One', sans-serif;">
+<body>
     <div class="bodyContainerProd">
         <div class="title">
             <nav class="navbar navbar-expand-lg navbar-light bg-light"
@@ -31,10 +37,10 @@
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page"
-                                    href="./paginas/Productos.html">Productos</a>
+                                    href="../paginas/Productos.html">Productos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./Staff.html">Quienes somos</a>
+                                <a class="nav-link" href="./aboutUs.html">Quienes somos</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -43,16 +49,17 @@
                                 </a>
                                 <ul class="dropdown-menu" style="background-color: #FFF5EB"
                                     aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="../paginas/sucursales/santaFe.html">Santa Fé</a>
+                                    <li><a class="dropdown-item" href="./sucursales/santaFe.html">Santa Fé</a>
                                     </li>
-                                    <li><a class="dropdown-item" href="../paginas/sucursales/BuenosAires.html">Buenos
+                                    <li><a class="dropdown-item" href="./sucursales/buenosAires.html">Buenos
                                             Aires</a></li>
-                                    <li><a class="dropdown-item" href="../paginas/sucursales/cordoba.html">Córdoba</a>
+                                    <li><a class="dropdown-item" href="./sucursales/cordoba.html">Córdoba</a>
                                     </li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item" href="../Help.html">Aún no estamos en tu ciudad?
+                                    <li><a class="dropdown-item" href="./sucursales/help.html">Aún no estamos en tu
+                                            ciudad?
                                             Contáctanos</a>
                                     </li>
                                 </ul>
@@ -63,9 +70,9 @@
             </nav>
         </div>
         <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-            <ol class="breadcrumb">
+            <ol class="breadcrumb" style="margin: 20px 40px ;">
                 <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Productos</li>
+                <li class="breadcrumb-item active" aria-current="page">Quienes Somos</li>
             </ol>
         </nav>
         <header class="container-fluid" id="productos">
@@ -100,7 +107,7 @@
                     </div>
                     <div class="col-12 col-sm-4 col-md-4 bordeado">
                         <img src="../imagenes/Productos/BRASIL-SANTOS-BOURBON-300x300.jpg" alt="brSantos">
-                        <h3>Brasil Santos Bourdon</h3>
+                        <h3>Brazil Santos Bourdon</h3>
                     </div>
                     <div class="col-12 col-sm-4 col-md-4 bordeado">
                         <img src="../imagenes/Productos/CHOCOLATE-300x300.jpg" alt="chocolate">
@@ -138,6 +145,18 @@
             </div>
         </section>
     </div>
+
+    <footer class="footer" style="margin-top: 50px;">
+        <div class="redesContainer" style="align-items: flex-end;">
+            <ul>
+                <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" class="instagram"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a></li>
+                <li><a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

@@ -2,7 +2,9 @@
 @import "footer";
 @import "paletteColors";
 @import "paginaStyles";
+@import "sucursales";
 @import "nav-and-Tittle";
+@import "fonts";
 * {
     margin: 0;
     padding: 0;
@@ -12,11 +14,10 @@
 body {
     letter-spacing: 0.03;
     line-height: 1.6;
-    font-family: "Julius Sans One", sans-serif;
-    background-image: linear-gradient(to bottom, #fff, $palette9);
+    font-family: "Poppins", "sans-serif";
 }
 .bodyContainer {
-    font-family: "Julius Sans One", sans-serif;
+    font-family: "Poppins", "sans-serif";
     font-size: 1.5rem;
     width: 100%;
     height: auto;
@@ -45,6 +46,12 @@ body {
 }
 h2 {
     font-size: 1.7rem;
+    margin-top: 2%;
+    text-align: center;
+    color: rgb(60, 60, 65);
+    text-shadow: 2px 2px 2px darkgray;
+}
+h3{
     margin-top: 2%;
     text-align: center;
     color: rgb(60, 60, 65);

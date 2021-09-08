@@ -15,9 +15,7 @@
   height: 25%; }
 
 .footer {
-  box-sizing: border-box;
-  border-top: 1px brown solid;
-  margin-left: 7.5%; }
+  box-sizing: border-box; }
 
 .textoInforma {
   margin: 5% 7.5%;
@@ -69,8 +67,12 @@
 .bodyContainerProd {
   background-color: #FFF5EB; }
 
-#productos {
+.breadcrumbs {
   font-family: "Poppins", "sans-serif";
+  display: flex; }
+
+#productos {
+  font-family: "PoppinsB";
   margin-top: 3%;
   width: 100%;
   height: 20%;
@@ -121,17 +123,106 @@
   position: relative;
   top: 50px; }
 
+#contacto {
+  background-image: url(../imagenes/Form/cafe-cup-coffee-hot-mood-table-664162-wallhere.com.jpg); }
+
+.form {
+  background: rgba(0, 0, 0, 0.6);
+  width: 90%;
+  max-width: 658px;
+  margin: auto;
+  padding: 5px 35px;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  border: radius 3px; }
+  .form .form-header .form-title {
+    font-weight: normal;
+    font-family: sans-serif;
+    color: #D4A276;
+    text-align: center;
+    padding: 14px 0; }
+    .form .form-header .form-title span {
+      color: #FFF5EB; }
+  .form .form-label {
+    display: block;
+    color: #D4A276;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    position: relative; }
+  .form .form-input {
+    background: rgba(8, 0, 8, 0.7);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #D4A276;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #FFF5EB;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
+  .form .form-textarea {
+    background: rgba(8, 0, 8, 0.7);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #D4A276;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #FFF5EB;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    resize: vertical;
+    max-height: 150px;
+    min-height: 50px; }
+  .form .btn-submit {
+    width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background: #BC8A5F;
+    font-size: 16px;
+    border: none;
+    padding: 15px 0;
+    cursor: pointer;
+    transition: all 0.5s ease; }
+  .form .btn-submit:hover {
+    background: #D4A276; }
+
+.videoStaff {
+  width: 80%;
+  display: flex;
+  margin: auto; }
+
+.background-aboutUs {
+  background-color: #F1CDA7;
+  margin-bottom: 5px;
+  padding-bottom: 5px; }
+
+.separador {
+  border: solid 1px #844D0B;
+  margin: 15px; }
+
+.page404 {
+  width: 100%;
+  height: 100%;
+  background-image: url(../imagenes/vectores/11104.jpg); }
+
 .title {
-  font-family: 'Julius Sans One', sans-serif;
+  font-family: "Poppins", "sans-serif";
   color: aliceblue !important;
   height: 100px;
   width: 100%;
   text-shadow: 5px 5px 5px darkgray; }
 
 .navbar-brand {
-  font-family: 'Julius Sans One', sans-serif !important;
+  font-family: 'Julius Sans One', sans-serif;
   font-size: 15rem;
   color: aliceblue; }
+
+@font-face {
+  font-family: "PoppinsB";
+  src: url(../Fonts/Poppins-Black.ttf);
+  font-weight: 900; }
 
 * {
   margin: 0;
@@ -141,11 +232,10 @@
 body {
   letter-spacing: 0.03;
   line-height: 1.6;
-  font-family: "Julius Sans One", sans-serif;
-  background-image: linear-gradient(to bottom, #fff, #F1CDA7); }
+  font-family: "Poppins", "sans-serif"; }
 
 .bodyContainer {
-  font-family: "Julius Sans One", sans-serif;
+  font-family: "Poppins", "sans-serif";
   font-size: 1.5rem;
   width: 100%;
   height: auto; }
@@ -172,6 +262,12 @@ body {
 
 h2 {
   font-size: 1.7rem;
+  margin-top: 2%;
+  text-align: center;
+  color: #3c3c41;
+  text-shadow: 2px 2px 2px darkgray; }
+
+h3 {
   margin-top: 2%;
   text-align: center;
   color: #3c3c41;

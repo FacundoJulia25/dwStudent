@@ -1,11 +1,13 @@
 //--------------------Productos---------------------
-.bodyContainerProd{
-  // background-image:linear-gradient(to bottom, $palette10, $palette11);
+.bodyContainerProd {
   background-color: $palette10;
-
+}
+.breadcrumbs{
+  font-family: "Poppins", "sans-serif";
+  display: flex;
 }
 #productos {
-  font-family: "Poppins", "sans-serif";
+  font-family: "PoppinsB";
   margin-top: 3%;
   width: 100%;
   height: 20%;
@@ -38,8 +40,9 @@
     transform: translateY(25px);
     -webkit-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
-    text-shadow: 0 1px 0 rgb(0, 0, 0), 0 2px 0 rgb(0, 0, 0), 0 3px 0 rgb(0, 0, 0), 0 4px 0 rgb(0, 0, 0), 0 5px 0 rgb(0, 0, 0), 0 6px 0 #cccccc,
-      0 7px 0 rgb(0, 0, 0), 0 8px 0rgb(0, 0, 0)rgb(0, 0, 0), 0 9px 0 rgb(0, 0, 0), 0 50px 30px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 1px 0 rgb(0, 0, 0), 0 2px 0 rgb(0, 0, 0), 0 3px 0 rgb(0, 0, 0), 0 4px 0 rgb(0, 0, 0),
+      0 5px 0 rgb(0, 0, 0), 0 6px 0 #cccccc, 0 7px 0 rgb(0, 0, 0), 0 8px 0rgb (0, 0, 0) rgb(0, 0, 0),
+      0 9px 0 rgb(0, 0, 0), 0 50px 30px rgba(0, 0, 0, 0.3);
   }
 }
 @keyframes text-pop-up-bottom {
@@ -55,11 +58,113 @@
     transform: translateY(50px);
     -webkit-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
-    text-shadow: 0 1px 0 rgb(0, 0, 0), 0 2px 0 rgb(0, 0, 0), 0 3px 0 rgb(0, 0, 0), 0 4px 0 rgb(0, 0, 0), 0 5px 0 rgb(0, 0, 0), 0 6px 0 #cccccc,
-    0 7px 0 rgb(0, 0, 0), 0 8px 0rgb(0, 0, 0)rgb(0, 0, 0), 0 9px 0 rgb(0, 0, 0), 0 50px 30px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 1px 0 rgb(0, 0, 0), 0 2px 0 rgb(0, 0, 0), 0 3px 0 rgb(0, 0, 0), 0 4px 0 rgb(0, 0, 0),
+      0 5px 0 rgb(0, 0, 0), 0 6px 0 #cccccc, 0 7px 0 rgb(0, 0, 0), 0 8px 0rgb (0, 0, 0) rgb(0, 0, 0),
+      0 9px 0 rgb(0, 0, 0), 0 50px 30px rgba(0, 0, 0, 0.3);
+  }
 }
-}
-.position{
+.position {
   position: relative;
   top: 50px;
+}
+
+//------------ Contacto ---------------
+#contacto {
+  background-image: url(../imagenes/Form/cafe-cup-coffee-hot-mood-table-664162-wallhere.com.jpg);
+}
+.form {
+  background: rgba(0, 0, 0, 0.6);
+  width: 90%;
+  max-width: 658px;
+  margin: auto;
+  padding: 5px 35px;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  border: radius 3px;
+  .form-header {
+    .form-title {
+      font-weight: normal;
+      font-family: sans-serif;
+      color: $palette7;
+      text-align: center;
+      padding: 14px 0;
+      span {
+        color: $palette10;
+      }
+    }
+  }
+  .form-label {
+    display: block;
+    color: $palette7;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
+    position: relative;
+  }
+  .form-input {
+    background: rgba(8, 0, 8, 0.7);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid $palette7;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: $palette10;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
+  }
+  .form-textarea {
+    background: rgba(8, 0, 8, 0.7);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid $palette7;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: $palette10;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
+    resize: vertical;
+    max-height: 150px;
+    min-height: 50px;
+  }
+  .btn-submit {
+    width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
+    background: $palette6;
+    font-size: 16px;
+    border: none;
+    padding: 15px 0;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  .btn-submit:hover {
+    background: $palette7;
+  }
+}
+// -----------------------  About Us --------------------------
+.videoStaff{
+  width: 80%;
+  display: flex;
+  margin: auto;
+
+}
+.background-aboutUs{
+  background-color: $palette9;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+.separador{
+  border: solid 1px #844D0B; margin: 15px;
+  
+}
+.page404{
+  width: 100%;
+  height: 100%;
+  background-image: url(../imagenes/vectores/11104.jpg);
 }
